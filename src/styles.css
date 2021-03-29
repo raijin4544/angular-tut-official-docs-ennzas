@@ -146,18 +146,20 @@ app-top-bar h1 {
 
 app-top-bar {
   /* background-color: #1976d2; */
-  background-color: #1925d2;
+  background-color: #d21928;
 }
 
 a {
   /* color: #1976d2; */
-  color: #1925d2;
+  /* color: #1925d2; */
+  color: #d21928;
 }
 
 .button,
 button {
   /* background-color: #1976d2; */
-  background-color: #1925d2;
+  /* background-color: #1925d2; */
+  background-color: #d21928;
 }
 
 * {
