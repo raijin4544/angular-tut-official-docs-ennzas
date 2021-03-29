@@ -12,10 +12,14 @@ export class CartComponent {
     private formBulider: FormBuilder
   ) {}
   items = this.cartService.getItems();
+  ifCart = this.cartService.ifCart;
   checkoutForm = this.formBulider.group({
     name: "",
     address: ""
   });
+  onClear(){
+    this.items = this.cartService.clearCart();
+  }
   onSubmit(): void {
     // Process checkout data here
     this.items = this.cartService.clearCart();

@@ -5,7 +5,9 @@
 <div class="cart-item" *ngFor="let item of items">
   <span>{{item.name | uppercase}}</span>
   <span>{{item.price | currency}}</span>
-
+</div>
+<div *ngIf="ifCart === true">
+  <button (click)="onClear()" class="clearbutton">Clear Cart</button>
 </div>
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
   <div>

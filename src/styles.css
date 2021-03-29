@@ -173,6 +173,9 @@ button {
 .fancy-button i.material-icons {
   color: #fff;
 }
+.clearbutton {
+  margin-bottom: 10%;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

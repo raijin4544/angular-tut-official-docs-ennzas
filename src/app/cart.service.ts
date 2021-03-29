@@ -5,9 +5,11 @@ import { HttpClient } from "@angular/common/http";
   providedIn: "root"
 })
 export class CartService {
+  ifCart = false;
   items = [];
   constructor(private http: HttpClient) {}
   addToCart(product) {
+    this.ifCart = true;
     this.items.push(product);
   }
   getItems() {
